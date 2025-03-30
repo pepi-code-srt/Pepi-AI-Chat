@@ -4,6 +4,9 @@ This project is a chatbot-powered web application that integrates **Ollama** for
 
 ---
 
+NOTE
+python 3.10 is required no higear version works 
+
 ## **1. Prerequisites**
 Ensure you have the following installed:
 - **Python 3.10** ([Download Here](https://www.python.org/downloads/))
