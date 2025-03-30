@@ -1,6 +1,6 @@
 # **Pepi AI Chat - Setup Guide**
 
-[![How It Works](https://github.com/pepi-code-srt/Pepi-AI-Chat/blob/main/file-MrylO8jADD.png)](https://github.com/pepi-code-srt/Pepi-AI-Chat/blob/main/how%20it%20works.mp4)
+[![How It Works](https://github.com/pepi-code-srt/Pepi-AI-Chat/blob/main/how%20it%20works.mp4)
 
 
 This project is a chatbot-powered web application that integrates **Ollama** for text-based AI responses and **Stable Diffusion** for image generation.
