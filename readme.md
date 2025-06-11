@@ -112,7 +112,7 @@ cd stable-diffusion-webui
 ### **Step 1: Clone the Repository**
 ```sh
 git clone https://github.com/your-repo/pepi-ai-chat.git
-cd pepi-ai-chat
+cd Pepi-AI-Chat
 ```
 
 ### **Step 2: Create and Activate a Virtual Environment**
