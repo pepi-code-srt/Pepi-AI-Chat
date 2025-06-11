@@ -45,8 +45,37 @@ Ollama is a local LLM model runner. To install:
    ```sh
    ollama serve
    ```
+4. ## Troubleshooting
+  ### Error: "Only one usage of each socket address (protocol/network address/port) is normally permitted."
+  If you see this error when running `ollama serve`:
+  
+  Error: listen tcp 127.0.0.1:11434: bind: Only one usage of each socket address (protocol/network address/port) is normally permitted.
+  
+  It means that port `11434` is already in use on your system, likely by another running instance of Ollama or another process.
 
----
+#### ✅ Solution
+
+1. **Check which process is using the port** (Windows PowerShell):
+
+```powershell
+Get-Process -Id (Get-NetTCPConnection -LocalPort 11434).OwningProcess
+Stop the process using the port:
+```
+
+```powershell
+Stop-Process -Id (Get-NetTCPConnection -LocalPort 11434).OwningProcess -Force
+Restart the server:
+```
+
+```bash
+ollama serve
+Alternatively, run Ollama on a different port:
+```
+
+```bash
+ollama serve --port 11500
+Then access it at: http://127.0.0.1:11500
+```
 
 ## **3. Installing Stable Diffusion WebUI (AUTOMATIC1111)**
 Stable Diffusion is required for image generation.
